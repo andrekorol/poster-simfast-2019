@@ -28,15 +28,15 @@
 
 \begin{document}
 
-\background{ % Set the background to an image (background.pdf)
+\background{% Set the background to an image (background.pdf)
 \begin{tikzpicture}[remember picture,overlay]
 \draw (current page.north west)+(-2em,2em) node[anchor=north west]
 {\includegraphics[height=1.1\textheight]{background}};
 \end{tikzpicture}
 }
 
-\begin{poster}{
-grid=false,
+\begin{poster}
+{grid=false,
 borderColor=bordercol, % Border color of content boxes
 headerColorOne=headercol1, % Background color for the header in the content boxes (left side)
 headerColorTwo=headercol2, % Background color for the header in the content boxes (right side)
@@ -60,8 +60,8 @@ boxshade=plain
 {\bf  \LARGE {DECIMETRIC RADIO EMISSION ANALYSIS OF CHROMOSPHERIC EVAPORATION IN A X1.0 FLARE ON MARCH 29, 2014} \\ % Poster title
 \vspace{0.2cm} 
 \footnotesize \underline{André Rossi Korol}$^1$, Francisco Carlos Rocha Fernandes$^1$\\  % Author names
-\footnotesize $^1$\it {UNIVAP - Universidade do Vale do Paraíba}\\ % Institution names
-\footnotesize $^1$\it{\textcolor{blue}{\underline{anrobits@yahoo.com.br}}}}
+\footnotesize $^1$\it UNIVAP --- Universidade do Vale do Paraíba\\ % Institution names
+\footnotesize $^1$\it \textcolor{blue}{\underline{anrobits@yahoo.com.br}}\/}
 %Author email addresses
 
 {\begin{tabular}{c} \includegraphics[height=0.75cm]{UNIVAP-SF.png}\\
@@ -72,9 +72,8 @@ boxshade=plain
 %----------------------------------------------------------------------------------------
 %	RESUMO
 %----------------------------------------------------------------------------------------
-\headerbox{Abstract}{name=abstract,span=1,column=0,row=0}{
-
-O pôster deve ser elaborado para papel a0, em duas ou três colunas, devendo conter, obrigatoriamente o título, o nome dos autores com a sigla das suas respectivas instituições e o email do primeiro autor. 
+\headerbox{Abstract}{name=abstract,span=1,column=0,row=0}
+{O pôster deve ser elaborado para papel a0, em duas ou três colunas, devendo conter, obrigatoriamente o título, o nome dos autores com a sigla das suas respectivas instituições e o email do primeiro autor. 
 Será obrigatória a presença do autor apresentador durante a apresentação do pôster.
 
 
@@ -86,14 +85,13 @@ Será obrigatória a presença do autor apresentador durante a apresentação do
 %   INTRODUÇÃO
 %---------------------------------------------------------------------------------------
 
-\headerbox{Introduction}{name=introduction,span=1,column=0,below=abstract}{ 
-Algumas dicas:
+\headerbox{Introduction}{name=introduction,span=1,column=0,below=abstract}
+{Algumas dicas:
 O pôster deverá ter informações referentes à sua pesquisa, informações tais como: Resumo, Introdução, Objetivo, Metodologia, Conclusão e outras informações (estes são pontos de orientação geral e não são regras).
 Utilize tamanho de fonte 48 como mínimo para título e fonte 28 como mínimo para conteúdo.
 Figuras e tabelas deverão cobrir, no máximo, $50\%$ do pôster, informando a fonte dos dados contidos nas mesmas. A fonte deverá ser colocada abaixo das figuras e tabelas.
 As informações apresentadas no pôster devem ser concisas e claras.
-Este modelo já se encontra na formatação sugerida.
-}
+Este modelo já se encontra na formatação sugerida.}
 
 
 %----------------------------------------------------------------------------------------
@@ -102,9 +100,8 @@ Este modelo já se encontra na formatação sugerida.
 
 
 
-\headerbox{Objectives}{name=objectives,span=1,column=0,below=introduction}{ 
-
-Nessa seção deve-se apresentar um parágrafo descrevendo o objetivo geral e alguns itens indicando os objetivos específicos. Pode-se utilizar o ambiente \texttt{itemize} como abaixo.
+\headerbox{Objectives}{name=objectives,span=1,column=0,below=introduction}
+{Nessa seção deve-se apresentar um parágrafo descrevendo o objetivo geral e alguns itens indicando os objetivos específicos. Pode-se utilizar o ambiente \texttt{itemize} como abaixo.
 
 \begin{itemize}
     \item Objetivo específico 1
@@ -119,9 +116,8 @@ Nessa seção deve-se apresentar um parágrafo descrevendo o objetivo geral e al
 %----------------------------------------------------------------------------------------
 %	METODOLOGIA 
 %----------------------------------------------------------------------------------------
-\headerbox{Methodology}{name=methodology,span=1,column=1,row=0}{
-
-Pode-se incluir tabelas utilizando o ambiente \texttt{table} ou conforme apresentado abaixo.
+\headerbox{Methodology}{name=methodology,span=1,column=1,row=0}
+{Pode-se incluir tabelas utilizando o ambiente \texttt{table} ou conforme apresentado abaixo.
 \begin{center}
 Tabela: Titulo da Tabela\\
 \begin{tabular}{|c|c|}
@@ -149,9 +145,8 @@ Enquanto equações são organizadas utilizando o ambiente \texttt{equation}, co
 %----------------------------------------------------------------------------------------
 %	RESULTADO
 %----------------------------------------------------------------------------------------
-\headerbox{Results and Discussions}{name=results,span=1,column=1,below=methodology}{
-
-Pode-se incluir figuras utilizando o ambiente \texttt{includegraphics} ou conforme apresentado abaixo.
+\headerbox{Results and Discussions}{name=results,span=1,column=1,below=methodology}
+{Pode-se incluir figuras utilizando o ambiente \texttt{includegraphics} ou conforme apresentado abaixo.
 
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/observatorio.jpg}\\
@@ -183,21 +178,19 @@ Fonte: do autor.
 %----------------------------------------------------------------------------------------
 %	AGRADECIMENTOS
 %----------------------------------------------------------------------------------------
-\headerbox{Acknowledgements}{name=acknowledgements,column=2,below=conclusions,span=1}{
-
-Agradecimentos a instituições de fomento ou a colaboradores do projeto.
+\headerbox{Acknowledgements}{name=acknowledgements,column=2,below=conclusions,span=1}
+{Agradecimentos a instituições de fomento ou a colaboradores do projeto.
 }
 
 %----------------------------------------------------------------------------------------
 %	REFERENCIAS
 %----------------------------------------------------------------------------------------
-\headerbox{References}{name=references,column=2,below=acknowledgements,span=1}{
+\headerbox{References}{name=references,column=2,below=acknowledgements,span=1}
+{Listar as referências listadas no texto. Exemplo de citações:\\
 
-Listar as referências listadas no texto. Exemplo de citações:\\
+[1] L. Burlaga, \textit{et.al} Magnetic loop behind an interplanetary shock; Voyager, helios, and imp 8 observations. {\it J. Geoph. Res.: Space Physics}, Wiley Online Library, v. 86, n. A8, p. 6673--6684, 1981.
 
-[1] L. Burlaga, \textit{et.al} Magnetic loop behind an interplanetary shock; Voyager, helios, and imp 8 observations. {\it J. Geoph. Res.: Space Physics}, Wiley Online Library, v. 86, n. A8, p. 6673-6684, 1981.
-
-[2] T. Wolfgang, \textit{Introduction: The Ellipsoidal Earth Model.} In: WOLFGANG, Torge. \textit{Geodesy.} 3. ed. New York: De Gruyter, 2001. cap. 1, p. 8.
+[2] T. Wolfgang, \textit{Introduction: The Ellipsoidal Earth Model.} In: WOLFGANG, Torge. \textit{Geodesy.} 3.\ ed. New York: De Gruyter, 2001.\ cap. 1, p. 8.
 
 [3] D. S. Wilks, \textit{Statistical methods in the atmospheric sciences}. Acad. Press San Diego, 1995.
 
@@ -208,13 +201,10 @@ Listar as referências listadas no texto. Exemplo de citações:\\
 %	REALIZAÇÃO
 %----------------------------------------------------------------------------------------
 
-\headerbox{Realization}{name=event,column=0,below=references, above=bottom,span=3}{
-
-\begin{center}
+\headerbox{Realization}{name=event,column=0,below=references, above=bottom,span=3}
+{\begin{center}
     \includegraphics[width=0.7\textwidth]{rodape_simfast.png}
 \end{center}
-
-
 } 
 
 
