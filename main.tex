@@ -78,14 +78,14 @@ boxshade=plain
 {One instance of the chromospheric evaporation phenomenon, associated with a X1.0
     solar flare, was identified by line profile data (Li et al. 2015) recorded by
     the Interface Region Imaging Spectrograph (IRIS;\@ De Pontieu et al. 2014) and
-    the EUV Imaging Spectrometer (EIS;\@ Culhane et al. 2007). The present work analyses
+    the EUV Imaging Spectrometer (EIS;\@ Culhane et al. 2007). The present work analyzes
     the metric radio emission counterpart of that flare. However, since a slow drift
     rate towards lower frequencies (Aschwanden \& Benz 1995) was not found in the
-    resulting spectra, we elaborate on why the chromospheric evaporation could be 
+    resulting spectra, we elaborate on why the chromospheric evaporation could be
     visualized with line profile data but not with metric radio emission data.
 
-\textit{Keywords: solar flare, solar radio emission,}\newline
-\textit{chromospheric evaporation, spectrometer,}\newline
+\textit{Keywords: solar flare, solar radio emission,}\\
+\textit{chromospheric evaporation, spectrometer.}\\
 \textit{data analysis, data visualization.}
 %Cabe aos autores providenciarem o pôster em material adequado (lona, pvc, glosspaper ou similar) com corda para ser afixado.
 }
@@ -95,11 +95,16 @@ boxshade=plain
 %---------------------------------------------------------------------------------------
 
 \headerbox{Introduction}{name=introduction,span=1,column=0,below=abstract}
-{\begin{center}
-        \includegraphics[width=0.8\textwidth]{figures/solar-flare-model.jpg}
+{During solar flares, a huge amount of energy is released, causing acceleration
+    of particles and heating of ambient plasma in the solar atmosphere.
+    After solar flares heat the electrons as a result of rapid energy deposition,
+    there is a mass upflow of heated plasma from the chromosphere to the corona
+    along the flare loops. This phenomenon is called Chromospheric Evaporation (Sturrock, 1973).
+    \begin{center}
+        \includegraphics{figures/solar-flare-model.jpg}
 
-        Figura 1. Solar Flare Model\\
-        Source: K.R. Lang, Tufts University, 2010.
+        \scriptsize Fig. 1. Solar Flare Model\\
+        \scriptsize Source: K.R. Lang, Tufts University, 2010.
     \end{center}
 }
 
@@ -110,13 +115,15 @@ boxshade=plain
 
 
 \headerbox{Objectives}{name=objectives,span=1,column=0,below=introduction}
-{The main goal was to visualize the presence or absence of chromospheric evaporation in spectra
-    generated from the analysis of metric radio emission data. This general objective was accomplished
+{The general objective was to visualize the presence or absence of chromospheric evaporation in spectra
+    generated from the analysis of metric radio emission data of a chosen event, and was accomplished
     by first achieving the following specific objectives:
     \begin{itemize}
-        \item Identification of the time when the event occured
-        \item Data selection based on the time found in the previous goal
-        \item 
+        \setlength\itemsep{0.01mm}
+        \item Data selection and analysis of the chosen event using software that we developed
+        \item Comparison of resulting spectra with spectra of other instances of chromospheric evaporation
+        \item Discussion about whether the chosen event showed the occurrence of chromospheric evaporation
+            on metric radio emissions
     \end{itemize}
 
 }
@@ -125,21 +132,43 @@ boxshade=plain
 %	METODOLOGIA
 %----------------------------------------------------------------------------------------
 \headerbox{Methodology}{name=methodology,span=1,column=1,row=0}
-{Pode-se incluir tabelas utilizando o ambiente \texttt{table} ou conforme apresentado abaixo.
-
-Enquanto equações são organizadas utilizando o ambiente \texttt{equation}, como segue:
+{The occurrence of chromospheric evaporation, associated with a X1.0 solar flare
+    that took place on March 29, 2014, at the solar active region NOAA AR 12017,
+    was visualized in line profile data gathered by the IRIS and EIS spectrographs.
+    That line profile data was obtained at multiple times: during the flare’s rise
+    (~17:30 UT), during its peak (17:48 UT), and during its decay (~17:54 UT).
+    In this present study we analyze the metric radio emission counterpart of that
+    same flare, at the same rise, peak and decay times, associated with the chromospheric
+    evaporation phenomenon. The radio emission was recorded in the metric (200 --- 450 MHz)
+    range by the e-Callisto (Compound Astronomical Low cost Low frequency Instrument for
+    Spectroscopy and Transportable Observatory) International Network of Solar Radio Spectrometers,
+    and analyzed with scientific computing tools developed by the authors, which are freely available online.
+    For comparison, the spectrum of the occurrence of chromospheric evaporation on February 16, 2011,
+    during an M1.6 flare (Gömöry et al. 2016), was also generated with the same computational tools, as well as
+    the spectrum showing the chromospheric evaporation that happened among a X6.9 flare on August 9, 2011,
+    that we had studied previously.
 }
 
 %----------------------------------------------------------------------------------------
 %	RESULTADO
 %----------------------------------------------------------------------------------------
-\headerbox{Results and Discussions}{name=results,span=1,column=1,below=methodology}
-{Pode-se incluir figuras utilizando o ambiente \texttt{includegraphics} ou conforme apresentado abaixo.
-
+\headerbox{Results}{name=results,span=1,column=1,below=methodology}
+{After using the computational tools to analyze the metric radio emission from the selected events,
+    the following spectra were obtained:
 \begin{center}
-\includegraphics[width=0.8\textwidth]{figures/observatorio.jpg}\\
-Figura 1. Posicionar legenda abaixo da imagem, espaçamento simples.\\
-Fonte: do autor.
+\includegraphics[height=3cm, keepaspectratio]{figures/ROSWELL-NM.png}\\
+\tiny(a)
+
+\includegraphics[height=3cm, keepaspectratio]{figures/BLEN7M_20110216.png}\\
+\tiny(b)
+
+\includegraphics[height=3cm, keepaspectratio]{figures/BLEN7M_20110809.png}\\
+\tiny(c)
+
+\scriptsize Fig. 2. Solar radio emission spectrum of data recorded on (a) March 29, 2014 (X1.0 flare),
+on (b) February 16, 2011 (M1.6 flare), and on (c) August 9, 2011 (X6.9 flare)
+
+\scriptsize Source: The Authors.
 \end{center}
 
 }
@@ -148,15 +177,22 @@ Fonte: do autor.
 %	DISCUSSÃO
 %----------------------------------------------------------------------------------------
 \headerbox{Conclusions}{name=conclusions,column=2,row=0} % To reduce this block to 1 column width, remove 'span=2'
-{Sugestões para fazer uma conclusão:
-\begin{itemize}
-    \item Fazer um breve resumo do trabalho.
-    \item Referir qual foi a grande conclusão do trabalho.
-    \item Referir se concretizaram ou não todos os objetivos ou se não foi possível concretizar algum deles e explicar o porquê.
-    \item Referir a importância que o trabalho tem para sua pesquisa.
-\end{itemize}
-
-
+{After selecting which events to compare the March 29, 2014 flare to, we were able to generate solar radio emission
+    spectra for all the three events. The generation of these spectra was possible due to the easy access to solar
+    spectrometers' data provided in FITS files by the e-Callisto network, and to the fine-tuning of our data analysis
+    and visualization tools that came with the observation of multiple events.
+    By analyzing and comparing the generated spectra, it is possible to conclude
+    that the 2014 flare we chose to study did not show the occurence of chromospheric evaporation on metric radio
+    emission data. That is because differently than both the 2011 flares we chose to analyze, it did not present
+    a slow drift rate towards lower frequencies, which is characteristic to observations of chromospheric evaporation
+    based on metric emissions. This absence of evidence of chromospheric evaporation on the metric emission data we
+    analyzed, is possibly related to the fact that the metric emission data is limited by the time cadence and
+    spatial resolution of the spectrometers, as stated by Li et.al (2015). And the fact that the IRIS and the EIS,
+    used by the same study just mentioned, both have high temporal and spatial resolution, as well as high sensitivity
+    in detecting high temperature emissions, could explain why they were able to confirm the occurrence of chromospheric
+    evaporation with their line profile data. Nonetheless, our observations are still important since metric radio emission
+    data of that event had not been studied before, neither compared to the results obtained by the previously reported
+    study of line profile data.
 }
 
 %----------------------------------------------------------------------------------------
@@ -180,6 +216,10 @@ Fonte: do autor.
 [3] Culhane, J. L., Harra, L. K., James, A. M., et al. 2007, SoPh, 243, 19
 
 [4] Aschwanden, M. J., Benz, A. O. 1995, ApJ, 438, 997–1012
+
+[5] Sturrock, P. A. 1973, Bull. American Astron. Soc., 5, 280
+
+[6] Gömöry, P., et al. 2016, A\&A, 588, A6
 
 }
 
