@@ -16,6 +16,7 @@
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 
+\usepackage{wrapfig}
 
 \graphicspath{{figures/}} % Directory in which figures are stored
 
@@ -52,14 +53,14 @@ boxshade=plain
 {\begin{tabular}{c}
         \includegraphics[height=1cm]{UNIVAP-SF.png}\\
 \end{tabular}
-}  
+}
 %
 %----------------------------------------------------------------------------------------
 %	TITLE AND AUTHOR NAME
 %----------------------------------------------------------------------------------------
 %
 {\bf  \LARGE {DECIMETRIC RADIO EMISSION ANALYSIS OF CHROMOSPHERIC EVAPORATION IN A X1.0 FLARE ON MARCH 29, 2014} \\ % Poster title
-\vspace{0.2cm} 
+\vspace{0.2cm}
 \footnotesize \underline{André Rossi Korol}, Francisco Carlos Rocha Fernandes\\  % Author names
 \footnotesize \it UNIVAP --- Universidade do Vale do Paraíba\\ % Institution names
 \footnotesize \it \textcolor{blue}{\underline{anrobits@yahoo.com.br}}\/}
@@ -68,16 +69,20 @@ boxshade=plain
 {\begin{tabular}{c}
         \includegraphics[height=1cm]{ipd2-sf.png}
 \end{tabular}
-}  
+}
 
 %----------------------------------------------------------------------------------------
 %	RESUMO
 %----------------------------------------------------------------------------------------
 \headerbox{Abstract}{name=abstract,span=1,column=0,row=0}
-{One instance of the chromospheric evaporation phenomenon, associated with a X1.0 
-    solar flare, was identified by line profile data (Li et al. 2015) recorded by 
+{One instance of the chromospheric evaporation phenomenon, associated with a X1.0
+    solar flare, was identified by line profile data (Li et al. 2015) recorded by
     the Interface Region Imaging Spectrograph (IRIS;\@ De Pontieu et al. 2014) and
-    the EUV Imaging Spectrometer (EIS;\@ Culhane et al. 2007).
+    the EUV Imaging Spectrometer (EIS;\@ Culhane et al. 2007). The present work analyses
+    the metric radio emission counterpart of that flare. However, since a slow drift
+    rate towards lower frequencies (Aschwanden \& Benz 1995) was not found in the
+    resulting spectra, we elaborate on why the chromospheric evaporation could be 
+    visualized with line profile data but not with metric radio emission data.
 
 \textit{Keywords: solar flare, solar radio emission,}\newline
 \textit{chromospheric evaporation, spectrometer,}\newline
@@ -90,13 +95,13 @@ boxshade=plain
 %---------------------------------------------------------------------------------------
 
 \headerbox{Introduction}{name=introduction,span=1,column=0,below=abstract}
-{Algumas dicas:
-O pôster deverá ter informações referentes à sua pesquisa, informações tais como: Resumo, Introdução, Objetivo, Metodologia, Conclusão e outras informações (estes são pontos de orientação geral e não são regras).
-Utilize tamanho de fonte 48 como mínimo para título e fonte 28 como mínimo para conteúdo.
-Figuras e tabelas deverão cobrir, no máximo, $50\%$ do pôster, informando a fonte dos dados contidos nas mesmas. A fonte deverá ser colocada abaixo das figuras e tabelas.
-As informações apresentadas no pôster devem ser concisas e claras.
-Este modelo já se encontra na formatação sugerida.}
+{\begin{center}
+        \includegraphics[width=0.8\textwidth]{figures/solar-flare-model.jpg}
 
+        Figura 1. Solar Flare Model\\
+        Source: K.R. Lang, Tufts University, 2010.
+    \end{center}
+}
 
 %----------------------------------------------------------------------------------------
 %	OBJETIVOS
@@ -105,20 +110,19 @@ Este modelo já se encontra na formatação sugerida.}
 
 
 \headerbox{Objectives}{name=objectives,span=1,column=0,below=introduction}
-{Nessa seção deve-se apresentar um parágrafo descrevendo o objetivo geral e alguns itens indicando os objetivos específicos. Pode-se utilizar o ambiente \texttt{itemize} como abaixo.
-
-\begin{itemize}
-    \item Objetivo específico 1
-    \item Objetivo específico 2
-    \item Objetivo específico 3
-\end{itemize}
-
-\vspace{9cm}
+{The main goal was to visualize the presence or absence of chromospheric evaporation in spectra
+    generated from the analysis of metric radio emission data. This general objective was accomplished
+    by first achieving the following specific objectives:
+    \begin{itemize}
+        \item Identification of the time when the event occured
+        \item Data selection based on the time found in the previous goal
+        \item 
+    \end{itemize}
 
 }
 
 %----------------------------------------------------------------------------------------
-%	METODOLOGIA 
+%	METODOLOGIA
 %----------------------------------------------------------------------------------------
 \headerbox{Methodology}{name=methodology,span=1,column=1,row=0}
 {Pode-se incluir tabelas utilizando o ambiente \texttt{table} ou conforme apresentado abaixo.
@@ -138,9 +142,6 @@ Figura 1. Posicionar legenda abaixo da imagem, espaçamento simples.\\
 Fonte: do autor.
 \end{center}
 
-\vspace{1.3cm}
-\vspace{9cm}
-
 }
 
 %----------------------------------------------------------------------------------------
@@ -152,10 +153,9 @@ Fonte: do autor.
     \item Fazer um breve resumo do trabalho.
     \item Referir qual foi a grande conclusão do trabalho.
     \item Referir se concretizaram ou não todos os objetivos ou se não foi possível concretizar algum deles e explicar o porquê.
-    \item Referir a importância que o trabalho tem para sua pesquisa. 
+    \item Referir a importância que o trabalho tem para sua pesquisa.
 \end{itemize}
 
-\vspace{1.5cm}
 
 }
 
@@ -163,22 +163,24 @@ Fonte: do autor.
 %	AGRADECIMENTOS
 %----------------------------------------------------------------------------------------
 \headerbox{Acknowledgements}{name=acknowledgements,column=2,below=conclusions,span=1}
-{Agradecimentos a instituições de fomento ou a colaboradores do projeto.
+{A.R. Korol would like to thank PIBIC-Univap for his CNPq scientific initiation grant.\\
+    F.C.R. Fernandes thanks FAPESP (Proc. 2017/02806--3) and CNPq (Proc. 311376/2015--0).\\
+    Both the authors are thankful to the Institute for Data Science FHNW Brugg/Windisch, Switzerland,
+    for the data that is freely available on the e-Callisto network.
 }
 
 %----------------------------------------------------------------------------------------
 %	REFERENCIAS
 %----------------------------------------------------------------------------------------
 \headerbox{References}{name=references,column=2,below=acknowledgements,span=1}
-{Listar as referências listadas no texto. Exemplo de citações:\\
+{[1] Li, Y., et al. 2015, ApJ, 811, 7
 
-[1] L. Burlaga, \textit{et.al} Magnetic loop behind an interplanetary shock; Voyager, helios, and imp 8 observations. {\it J. Geoph. Res.: Space Physics}, Wiley Online Library, v. 86, n. A8, p. 6673--6684, 1981.
+[2] De Pontieu, B., Title, A. M., Lemen, J. R., et al. 2014, SoPh, 289, 2733
 
-[2] T. Wolfgang, \textit{Introduction: The Ellipsoidal Earth Model.} In: WOLFGANG, Torge. \textit{Geodesy.} 3.\ ed. New York: De Gruyter, 2001.\ cap. 1, p. 8.
+[3] Culhane, J. L., Harra, L. K., James, A. M., et al. 2007, SoPh, 243, 19
 
-[3] D. S. Wilks, \textit{Statistical methods in the atmospheric sciences}. Acad. Press San Diego, 1995.
+[4] Aschwanden, M. J., Benz, A. O. 1995, ApJ, 438, 997–1012
 
-\vspace{9cm}
 }
 
 %----------------------------------------------------------------------------------------
@@ -189,7 +191,7 @@ Fonte: do autor.
 {\begin{center}
     \includegraphics[width=0.7\textwidth]{rodape_simfast.png}
 \end{center}
-} 
+}
 
 
 \end{poster}
